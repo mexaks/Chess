@@ -1,0 +1,85 @@
+body{
+background-color: darkslategrey;
+color: aqua;
+}
+header{
+    margin-bottom: 30px;
+}
+.chess_board{
+    max-width: 800px;
+    flex: 0 1 auto;
+    display: flex;
+    
+}
+.ChessBoardRow{
+    width: 12.5%;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.ChessBoardCell{
+    width: 64px;
+    height: 64px;
+}
+.ChessBoardCell:hover{cursor: pointer}
+.ChessBoardCell.active{
+        box-shadow: 3px 9px 20px #a4ff00 inset
+}
+.Available{
+     box-shadow: 3px 9px 20px #26ddca inset
+}
+.ChessBoardCell__ChessPiece{
+   height: inherit;
+    width: fit-content;
+    margin: auto;
+}
+
+.chess_info__turnSide:hover{cursor: pointer}
+.chess_info__turnSide{
+    width: 20px;
+    height: 20px;
+}
+.chess_info__btnReset{
+    border: 2px;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    padding: 5px;
+    margin-top: 5px;
+}
+.WrongSide{
+    box-shadow: 3px 9px 20px red inset
+}
+.infoWrongSide,.infoVictory,.ChoisePiece{
+    width: 40%;
+    height: auto;
+    padding: 30px;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    background: #ffffffed;
+    color: black;
+    text-align: center;
+}
+.ChoisePiece__select{
+    border: 3px solid black;
+    padding: 5px;
+    margin-top: 10px;
+}
+.ChoisePiece__btnSubmit{
+    display: block;
+    background: black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.CloseWindow,.infoVictory__CloseBtn:hover{
+	cursor: pointer;
+	pointer-events: all;
+}
+.CloseWindow{
+position: absolute;
+top: 0;
+    right: 5px;
+}
